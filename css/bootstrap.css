@@ -1,0 +1,78 @@
+.bar {
+    top: 84%;
+}
+/*------ CONTAINER ------*/
+.container {
+    background-color: #172A52;
+    height: 10em;
+    text-align: center;
+    width: 100%;
+}
+
+/*------ FONTAWESOME ARROW ------*/
+
+.arrow {
+    color: #F1592A;
+}
+.right_arrow {
+    margin-left: 1.25rem;
+}
+
+/*------ BUTTONS ------*/
+
+.drop-menu {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.drop_menu:active {
+    box-shadow: none;
+}
+
+.filter_buttons {
+    box-shadow: none;
+    padding: .75em 2em;
+}
+.filter_buttons a {
+    text-transform: uppercase;
+}
+
+/*------ DROPDOWN ITEMS ------*/
+
+.drop-item {
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 0.25rem 1rem 0.25rem .75rem;
+    text-transform: uppercase;
+}
+
+.drop-item.active, 
+.drop-item:active {
+    background-color: rgb(238, 238, 238);
+}
+
+.drop-item.hover, 
+.drop-item:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+
+.drop-item span {
+    float: right;
+    margin-left: 1em;
+    size: 3rem;
+}
+
+.eqp-grp {
+    display: block;
+}
+.eqp-grp:hover {
+    text-decoration: none;
+}
+
+/*------ SEARCH BUTTON ------*/
+
+.search {
+    background-color: #F1592A;
+    padding: .75em 2em;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\matth\Desktop\Coding\FrontEnd\CSS\category.css">
+</head>
+<body>
+
+    <section class="search_area">
+        <div class="search_bar">
+            <input placeholder="Type keyword here ..." type="text" id="searchField" value>
+        </div>
+        <ul class="filter_buttons">
+            <li id="distance">
+                <a href="#">Distance<img class="arrow" src="../Images/arrow.svg" alt="Down arrow"></a>
+            </li>
+            <li id="category" onclick="dropdownMenu()">
+                <a href="#">Category<img class="arrow" src="../Images/arrow.svg" alt="Down arrow"></a>
+                <ul class="dropdown_alpha" id="dropdown_alpha">
+                    <li class="category_dropdown">
+                        <a href="#">EQUIPMENT & PRODUCTS</a>
+                            <ul class='menu'>
+                                <li><a href="#" class="category_dropdown equip">ELECTRONICS</a></li>
+                                <li><a href="#" class="category_dropdown equip">INVENTORY</a></li>
+                                <li><a href="#" class="category_dropdown equip">MATERIAL HANDLING EQUIPMENT</a></li>
+                                <li><a href="#" class="category_dropdown equip">SUPPLIES</a></li>
+                                <li><a href="#" class="category_dropdown equip">EQUIPMENT & TOOLS</a></li>
+                                <li><a href="#" class="category_dropdown equip">MACHINERY</a></li>
+                                <li><a href="#" class="category_dropdown equip">RAW MATERIAL</a></li>
+                                <li><a href="#" class="category_dropdown equip">VEHICLES</a></li>
+                                <li><a href="#" class="category_dropdown equip">OTHER</a></li>
+                            </ul>
+                    </li>
+                    <li class="category_dropdown">
+                        <a href="#">EXPERTISE</a>
+                    </li>
+                    <li class="category_dropdown">
+                        <a href="#">REAL ESTATE</a>
+                    </li>
+                    <li class="category_dropdown bottom_category">
+                        <a href="#">HUMAN RESOURCES</a>
+                    </li> 
+                </ul>
+            </li>
+            <li class="search_button"><a href="#">SEARCH</a></li>
+        </ul>
+        
+    </section>
+     
+    <!-- Dropdown menu onclick -->
+    <script>
+        function dropdownMenu() {
+            document.getElementById("dropdown_alpha").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            console.log(event.target);
+            if (!event.target.matches('.dropdown_alpha') && !event.target.matches('#category a')
+                && !event.target.matches('.arrow') && !event.target.matches('.arrow')) {
+                document.getElementById('dropdown_alpha').classList.remove('show');
+            }
+        }
+    </script>
+    <script src="C:\Users\matth\Desktop\Coding\FrontEnd\JavaScript\jquery-3.4.1.js"></script>
+    <script src="C:\Users\matth\Desktop\Coding\FrontEnd\HTML\categoryapp.js"></script>
+
+</body>
+</html>

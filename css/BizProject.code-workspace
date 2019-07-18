@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\matth\\Desktop\\Coding\\FrontEnd\\HTML"
+		},
+		{
+			"path": "C:\\Users\\matth\\Desktop\\Coding\\FrontEnd\\JavaScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}
