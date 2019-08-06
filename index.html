@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="C:\Users\matth\Desktop\Coding\FrontEnd\CSS\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 
 </head>
 
@@ -35,39 +35,83 @@
                     <i class="fas fa-angle-down arrow"></i>
                 </span>
               </button>
-              <div class="dropdown-menu drop-menu" aria-labelledby="btnGroupDrop1">
-                <a id="equip-products" class="dropdown-item drop-item text-muted border flex-column" href="#">equipment & product<span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">equipment & product</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">electronics
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">equipment & tools
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">inventory
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">machinery
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">material handling equipment
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">raw material
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">supplies
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                    <a class="drop-item eqp-grp border text-muted" href="#">vehicles
-                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span</a>
-                <a id="expertise" class="dropdown-item drop-item text-muted border flex-column" data-interval="false" href="#">expertise
+              <div class="dropdown-menu drop-menu" aria-labelledby="btnGroupDrop1" style="transform: translateX(100%);">
+                <a id="equip-products" class="click-stay dropdown-item drop-item text-muted border flex-column" href="#">equipment & product<span><i class="fas fa-angle-right right_arrow text-muted"></i></span>
+                  <!-- EQUIPMENT & PRODUCTS MENU -->
+                      <div class="clearfix" id="ep-sub" style="display:none; position:absolute; transform: translateX(100%); overflow-x: hidden;">
+                        <a id="eqp-back" class="border click-stay eqp-grp drop-item text-muted top-item" href="#"><i class="fas fa-chevron-left left_arrow text-muted"></i>equipment & product</a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">electronics
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">equipment & tools
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">inventory
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">machinery
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">material handling equipment
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">raw material
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">supplies
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                          <a class="drop-item click-stay eqp-grp border text-muted" href="#">vehicles
+                            <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      </div>
+                    <!-- END OF EQUIPMENT & PRODUCTS MENU -->
+                  </a>   
+                <a id="expertise" class="click-stay dropdown-item drop-item text-muted border flex-column" data-interval="false" href="#">expertise
                   <span><i class="fas fa-angle-right right_arrow text-muted"></i></span>
                 </a>
-                <a id="human-resources" class="dropdown-item drop-item text-muted border flex-column" href="#">human resources<span><i class="fas fa-angle-right right_arrow text-muted"></i></span>
+                  <!-- EXPERTISE MENU -->
+                    <div class="clearfix" id="ex-sub" style="display:none; position:absolute; transform: translateX(100%); overflow-x: hidden;">
+                      <a id ="exp-back" class="top-item click-stay drop-item ex-grp border text-muted" href="#"><i class="fas fa-chevron-left left_arrow text-muted"></i>expertise</a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">custom manufacturing
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">environmental services
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">industrial processes
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">machining & metalworking
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">maintenance & repair
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">professional services
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item ex-grp border text-muted" href="#">transport & logistics
+                        <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                    </div>
+                  <!-- END OF EXPERTISE MENU -->      
+                <a id="human-resources" class="click-stay dropdown-item drop-item text-muted border flex-column" href="#">human resources<span><i class="fas fa-angle-right right_arrow text-muted"></i></span>
                 </a>
-                <a id="real-estate" class="dropdown-item drop-item text-muted border flex-column" href="#">real estate<span><i class="fas fa-angle-right right_arrow text-muted"></i></span>
+                  <!-- HUMAN RESOURCES MENU -->
+                  <div class="clearfix" id="hr-sub" style="display:none; position:absolute; transform: translateX(100%); overflow-x: hidden;">
+                    <a id ="hr-back" class="top-item click-stay drop-item hr-grp border text-muted" href="#"><i class="fas fa-chevron-left left_arrow text-muted"></i>human resources</a>
+                  </div>
+                  <!-- END OF HUMAN RESOURCES MENU -->
+                <a id="real-estate" class="click-stay dropdown-item drop-item text-muted border flex-column" href="#">real estate<span><i class="fas fa-angle-right right_arrow text-muted"></i></span>
                 </a>
+                  <!-- REAL ESTATE MENU -->
+                  <div class="clearfix" id="re-sub" style="display:none; position:absolute; transform: translateX(100%); overflow-x: hidden;">
+                    <a id ="re-back" class="top-item click-stay drop-item re-grp border text-muted" href="#"><i class="fas fa-chevron-left left_arrow text-muted"></i>real estate</a>
+                    <a class="click-stay drop-item re-grp border text-muted" href="#">facility
+                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item re-grp border text-muted" href="#">office & conference
+                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item re-grp border text-muted" href="#">parking space
+                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item re-grp border text-muted" href="#">warehouse & storage
+                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                      <a class="click-stay drop-item re-grp border text-muted" href="#">other
+                      <span><i class="fas fa-angle-right right_arrow text-muted"></i></span></a>
+                  </div>
+                  <!-- END OF REAL ESTATE MENU -->
               </div>
           <button type="button" class="btn btn-secondary border-left search shadow-none">SEARCH</button>
         </div>
   </div>
 
+  <script src="js/jquery-3.4.1.js"></script> 
+  <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script> 
 
-  <script src="C:\Users\matth\Desktop\Coding\FrontEnd\JavaScript\bootstrap.js" type="text/javascript" charset="utf-8"></script> 
-  <script src="C:\Users\matth\Desktop\Coding\FrontEnd\JavaScript\jquery-3.4.1.js"></script> 
 </body>
 </html>

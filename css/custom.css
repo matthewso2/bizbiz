@@ -1,3 +1,7 @@
+a {
+    word-wrap: break-word;
+}
+
 .bar {
     top: 84%;
 }
@@ -14,8 +18,17 @@
 .arrow {
     color: #F1592A;
 }
+
 .right_arrow {
-    margin-left: 1.25rem;
+    margin-left: auto;
+    margin-right: -1rem;
+}
+
+.left_arrow {
+    left: -0.5rem;
+    padding-left: 1rem;
+    position: absolute;
+    top: 0.52rem;
 }
 
 /*------ BUTTONS ------*/
@@ -40,9 +53,10 @@
 /*------ DROPDOWN ITEMS ------*/
 
 .drop-item {
+    background-color: white;
     text-align: left;
     font-size: 0.75rem;
-    padding: 0.25rem 1rem 0.25rem .75rem;
+    padding: 0.25rem 1.25rem 0.25rem .75rem;
     text-transform: uppercase;
 }
 
@@ -63,11 +77,20 @@
     size: 3rem;
 }
 
-.eqp-grp {
-    display: block;
+.eqp-grp,
+.ex-grp {
+    display: none;
 }
-.eqp-grp:hover {
+.eqp-grp:hover,
+.ex-grp:hover {
     text-decoration: none;
+}
+
+.top-item,
+.top-item:hover {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
 }
 
 /*------ SEARCH BUTTON ------*/
@@ -75,4 +98,17 @@
 .search {
     background-color: #F1592A;
     padding: .75em 2em;
+}
+
+/* ANIMATION */
+
+#equip-products,
+#expertise,
+#human-resources,
+#real-estate,
+#eqp-back,
+#exp-back,
+#hr-back,
+#re-back {
+    animation-iteration-count: infinite;
 }
