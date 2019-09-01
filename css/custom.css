@@ -1,114 +1,52 @@
-a {
-    word-wrap: break-word;
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.bar {
-    top: 84%;
-}
-/*------ CONTAINER ------*/
-.container {
-    background-color: #172A52;
-    height: 10em;
-    text-align: center;
-    width: 100%;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
-/*------ FONTAWESOME ARROW ------*/
-
-.arrow {
-    color: #F1592A;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#mainDropdown {
+  overflow-x: hidden;
 }
 
-.right_arrow {
-    margin-left: auto;
-    margin-right: -1rem;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.left_arrow {
-    left: -0.5rem;
-    padding-left: 1rem;
-    position: absolute;
-    top: 0.52rem;
+.submenu {
+  transform: translateX(100%);
+  visibility: hidden;
 }
 
-/*------ BUTTONS ------*/
-
-.drop-menu {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.drop_menu:active {
-    box-shadow: none;
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.filter_buttons {
-    box-shadow: none;
-    padding: .75em 2em;
-}
-.filter_buttons a {
-    text-transform: uppercase;
-}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
 
-/*------ DROPDOWN ITEMS ------*/
-
-.drop-item {
-    background-color: white;
-    text-align: left;
-    font-size: 0.75rem;
-    padding: 0.25rem 1.25rem 0.25rem .75rem;
-    text-transform: uppercase;
-}
-
-.drop-item.active, 
-.drop-item:active {
-    background-color: rgb(238, 238, 238);
-}
-
-.drop-item.hover, 
-.drop-item:hover {
-    background-color: rgb(235, 235, 235);
-}
-
-
-.drop-item span {
-    float: right;
-    margin-left: 1em;
-    size: 3rem;
-}
-
-.eqp-grp,
-.ex-grp {
-    display: none;
-}
-.eqp-grp:hover,
-.ex-grp:hover {
-    text-decoration: none;
-}
-
-.top-item,
-.top-item:hover {
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-}
-
-/*------ SEARCH BUTTON ------*/
-
-.search {
-    background-color: #F1592A;
-    padding: .75em 2em;
-}
-
-/* ANIMATION */
-
-#equip-products,
-#expertise,
-#human-resources,
-#real-estate,
-#eqp-back,
-#exp-back,
-#hr-back,
-#re-back {
-    animation-iteration-count: infinite;
-}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
