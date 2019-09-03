@@ -112,7 +112,7 @@ body {
     background: #537d7b;
     color: white;
     width: 80%;
-    display: none;
+
   }
   /* First Child Design */
   .panel:not(#panel1) li:first-child {

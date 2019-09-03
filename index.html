@@ -18,10 +18,10 @@
 
       <div id="menu" style="display:none;">
           <ul id="panel1" class="panel">
-              <li onclick="toggleSubMenu(this, '#panel1-1')">equipment & product</i></li>
-              <li onclick="toggleSubMenu(this, '#panel1-2')">expertise</i></li>
-              <li onclick="toggleSubMenu(this, '#panel1-3')">human resources</i></li>
-              <li onclick="toggleSubMenu(this, '#panel1-4')">real estate</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-1', false, '#content1')">equipment & product</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-2', false, '#content2')">expertise</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-3', false, '#content3')">human resources</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-4', false, '#content4')">real estate</i></li>
           </ul>
       
           <ul id="panel1-1" class="panel">
@@ -65,29 +65,29 @@
   </div>
     <div id="content">
 
-      <div id="content-main">
-        <ul id="content1">
+      <div id="content-main" >
+        <ul id="content1" style="display:none;">
           <li>equipment & product</li>
           <li>equipment & product</li>
           <li>equipment & product</li>
           <li>equipment & product</li>
         </ul>
 
-        <ul id="content2">
+        <ul id="content2" style="display:none;">
             <li>expertise</li>
             <li>expertise</li>
             <li>expertise</li>
             <li>expertise</li>
         </ul>
 
-        <ul id="content3">
+        <ul id="content3" style="display:none;">
             <li>human resources</li>
             <li>human resources</li>
             <li>human resources</li>
             <li>human resources</li>
         </ul>
 
-        <ul id="content4">
+        <ul id="content4" style="display:none;">
             <li>real estate</li>
             <li>real estate</li>
             <li>real estate</li>
