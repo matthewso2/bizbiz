@@ -6,28 +6,71 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'>
+    
   <title></title>
 </head>
 <body>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="mainDropdown">
-      <div id="firstDropdown" class="dropdown-content">
-        <a href="#" onclick="menuAnimation(eqpmenu, firstDropdown)">equipment & product</a>
-        <a href="#">expertise</a>
-        <a href="#">human resources</a>
-        <a href="#">real estate</a>
-      </div>
+  <div id="header">
+    <div id="bar">
+      <button class="buttons">Distance</button>
+      <button class="buttons" onclick="toggleMenu()">Category</button>
+
+      <div id="menu" style="display:none;">
+          <ul id="panel1" class="panel">
+              <li onclick="toggleSubMenu(this, '#panel1-1')">equipment & product</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-2')">expertise</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-3')">human resources</i></li>
+              <li onclick="toggleSubMenu(this, '#panel1-4')">real estate</i></li>
+          </ul>
       
-      <div id="eqpmenu" class="dropdown-content submenu">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+          <ul id="panel1-1" class="panel">
+              <li onclick="toggleSubMenu(this, '#panel1', true)">equipment & product</li>
+              <li onclick="displayContent(this)">electronics</li>
+              <li onclick="displayContent(this)">equipment & tools</li>
+              <li onclick="displayContent(this)">inventory</li>
+              <li onclick="displayContent(this)">machinery</li>
+              <li onclick="displayContent(this)">material handling equipment</li>
+              <li onclick="displayContent(this)">raw material</li>
+              <li onclick="displayContent(this)">supplies</li>
+              <li onclick="displayContent(this)">vehicles</li>
+              <li onclick="displayContent(this)">other</li>
+          </ul>
+      
+          <ul id="panel1-2" class="panel">
+              <li onclick="toggleSubMenu(this, '#panel1', true)">expertise</li>
+              <li onclick="displayContent(this)">custom manufacturing</li>
+              <li onclick="displayContent(this)">environmental services</li>
+              <li onclick="displayContent(this)">industrial processes</li>
+              <li onclick="displayContent(this)">machine & metalworking</li>
+              <li onclick="displayContent(this)">maintenance & repair</li>
+              <li onclick="displayContent(this)">professional services</li>
+              <li onclick="displayContent(this)">transport & logistics</li>
+              <li onclick="displayContent(this)">other</li>
+          </ul>
+      
+          <ul id="panel1-3" class="panel">
+              <li onclick="toggleSubMenu(this, '#panel1', true)">human resources</li>
+          </ul>
+          <ul id="panel1-4" class="panel">
+              <li onclick="toggleSubMenu(this, '#panel1', true)">real estate</li>
+              <li onclick="displayContent(this)">facility</li>
+              <li onclick="displayContent(this)">office & conference room</li>
+              <li onclick="displayContent(this)">parking space</li>
+              <li onclick="displayContent(this)">warehouse & storage</li>
+              <li onclick="displayContent(this)">other</li>
+          </ul>
       </div>
     </div>
   </div>
-  <script src="js/custom.js" type="text/javascript" charset="utf-8"></script>
-      <script src="js/jquery-3.4.1.js"></script>  
+    <!-- <div id="content"></div> -->
+  
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+  
+  
+  
 </body>
 </html>
