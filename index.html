@@ -13,8 +13,8 @@
 <body>
   <div id="header">
     <div id="bar">
-      <button class="buttons">Distance</button>
-      <button class="buttons" onclick="toggleMenu()">Category</button>
+      <button class="buttons"><a>Distance</a></button>
+      <button class="buttons" id="dropdown" onclick="toggleMenu()"><a>Category</a></button>
 
       <div id="menu" style="display:none;">
           <ul id="panel1" class="panel">
@@ -63,12 +63,43 @@
       </div>
     </div>
   </div>
-    <!-- <div id="content"></div> -->
+    <div id="content">
+
+      <div id="content-main">
+        <ul id="content1">
+          <li>equipment & product</li>
+          <li>equipment & product</li>
+          <li>equipment & product</li>
+          <li>equipment & product</li>
+        </ul>
+
+        <ul id="content2">
+            <li>expertise</li>
+            <li>expertise</li>
+            <li>expertise</li>
+            <li>expertise</li>
+        </ul>
+
+        <ul id="content3">
+            <li>human resources</li>
+            <li>human resources</li>
+            <li>human resources</li>
+            <li>human resources</li>
+        </ul>
+
+        <ul id="content4">
+            <li>real estate</li>
+            <li>real estate</li>
+            <li>real estate</li>
+            <li>real estate</li>
+        </ul>
+      </div>
+
+    </div>
   
     <script src="js/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
   
   
   

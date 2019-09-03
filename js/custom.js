@@ -20,3 +20,11 @@ function displayContent(_this) {
   var elementText = $(_this).text();
   $('#content').text(elementText);
 }
+
+
+$('#dropdown').click(function(){
+    
+  const name = $('#content-main ul li');
+
+  $("#content-main ul li").slideDown(2000);
+});

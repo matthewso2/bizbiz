@@ -52,15 +52,18 @@ body {
     width: 100%;
   }
   /* FontAwesome Arrows Main */
-  .buttons::after {
+
+  /* Button Arrows */
+  .buttons a::after {
     color: #F1592A;
     content: "\f107";
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
-    float: left;
+    float: right;
     width: 1.3em;  
   }
-
+  
+  /* Right Arrows */
   #menu ul li:not(:first-child)::after,
   #panel1 li:first-child::after {
     content: "\f105";
@@ -69,42 +72,53 @@ body {
     float: right;
     width: 1.3em; 
   }
-  #menu ul li:not(:first-child)::after,
-  #panel1 li:first-child::after {
-    content: "\f105";
+  /* Back Arrows */
+  .panel:not(#panel1) li:first-child::before {
+    content: "\f104";
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
-    float: right;
+    float: left;
     width: 1.3em; 
   }
 
   /* Change color of dropdown links on hover */
   #menu ul li:hover {background-color: #ddd}
   
+  /* Main Panel */
   .panel {
     display: inline-block;
     width: 15em;
     position: absolute;
+    z-index: 1000;
   }
   
+  /* Content Design */
   #content { 
     display: block;
     width: 100%;
     background-color: beige;
-    height: 200px;
+    height: 800px;
+    position: absolute;
+    /* text-align: center; */
+    top: 40%;
+  }
+  #content-main ul {
+      float: left;
+      
+      text-decoration: none;
+  }
+  #content-main ul li {
+    padding: 10px;
+    background: #537d7b;
+    color: white;
+    width: 80%;
+    display: none;
+  }
+  /* First Child Design */
+  .panel:not(#panel1) li:first-child {
+    font-weight: bold;
     text-align: center;
   }
-
-  /* Arrows */
-.arrow {
-    color: #F1592A;
-}
-
-.r_arrow {
-    float: right;
-    margin-left: auto;
-    top: 3px;
-}
 
 /* Clearfix */
 .clearfix::after {
