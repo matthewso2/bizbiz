@@ -14,18 +14,19 @@
   <div id="header">
     <div id="bar">
       <button class="buttons"><a>Distance</a></button>
-      <button class="buttons" id="dropdown" onclick="toggleMenu()"><a>Category</a></button>
+      <button class="buttons" id="dropdown" onclick="toggleMenu(event)"><a>Category</a></button>
 
       <div id="menu" style="display:none;">
-          <ul id="panel1" class="panel">
-              <li onclick="toggleSubMenu(this, '#panel1-1', false, '#content1')">equipment & product</i></li>
-              <li onclick="toggleSubMenu(this, '#panel1-2', false, '#content2')">expertise</i></li>
-              <li onclick="toggleSubMenu(this, '#panel1-3', false, '#content3')">human resources</i></li>
-              <li onclick="toggleSubMenu(this, '#panel1-4', false, '#content4')">real estate</i></li>
+        <!-- First Sub Menu -->
+          <ul id='subcategory' class="categories">
+              <li onclick="toggleSubMenu(event, this, '#panel1-1', false, '#content1')">equipment & product</i></li>
+              <li onclick="toggleSubMenu(event, this, '#panel1-2', false, '#content2')">expertise</i></li>
+              <li onclick="toggleSubMenu(event, this, '#panel1-3', false, '#content3')">human resources</i></li>
+              <li onclick="toggleSubMenu(event, this, '#panel1-4', false, '#content4')">real estate</i></li>
           </ul>
-      
-          <ul id="panel1-1" class="panel">
-              <li onclick="toggleSubMenu(this, '#panel1', true)">equipment & product</li>
+      <!-- Equipement & Product Menu -->
+          <ul id="panel1-1" class="categories">
+              <li onclick="toggleSubMenu(event, this, '#subcategory', true)">equipment & product</li>
               <li onclick="displayContent(this)">electronics</li>
               <li onclick="displayContent(this)">equipment & tools</li>
               <li onclick="displayContent(this)">inventory</li>
@@ -36,9 +37,9 @@
               <li onclick="displayContent(this)">vehicles</li>
               <li onclick="displayContent(this)">other</li>
           </ul>
-      
-          <ul id="panel1-2" class="panel">
-              <li onclick="toggleSubMenu(this, '#panel1', true)">expertise</li>
+      <!-- Expertise Menu -->
+          <ul id="panel1-2" class="categories">
+              <li onclick="toggleSubMenu(this, '#subcategory', true)">expertise</li>
               <li onclick="displayContent(this)">custom manufacturing</li>
               <li onclick="displayContent(this)">environmental services</li>
               <li onclick="displayContent(this)">industrial processes</li>
@@ -48,12 +49,13 @@
               <li onclick="displayContent(this)">transport & logistics</li>
               <li onclick="displayContent(this)">other</li>
           </ul>
-      
-          <ul id="panel1-3" class="panel">
-              <li onclick="toggleSubMenu(this, '#panel1', true)">human resources</li>
+      <!-- Human Resources Menu -->
+          <ul id="panel1-3" class="categories">
+              <li onclick="toggleSubMenu(this, '#subcategory', true)">human resources</li>
           </ul>
-          <ul id="panel1-4" class="panel">
-              <li onclick="toggleSubMenu(this, '#panel1', true)">real estate</li>
+      <!-- Real Estate Menu -->
+          <ul id="panel1-4" class="categories">
+              <li onclick="toggleSubMenu(this, '#subcategory', true)">real estate</li>
               <li onclick="displayContent(this)">facility</li>
               <li onclick="displayContent(this)">office & conference room</li>
               <li onclick="displayContent(this)">parking space</li>
