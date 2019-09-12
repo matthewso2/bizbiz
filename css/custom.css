@@ -99,14 +99,14 @@ body {
     background-color: beige;
     height: 800px;
     position: absolute;
-    /* text-align: center; */
     top: 40%;
   }
   #content-main ul {
       float: left;
       
   }
-  #content-main ul li {
+  #content-main ul li,
+  #content-main ul ul li {
     padding: 10px;
     background: #537d7b;
     color: white;

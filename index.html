@@ -27,8 +27,8 @@
       <!-- Equipement & Product Menu -->
           <ul id="panel1-1" class="categories">
               <li onclick="toggleSubMenu(event, this, '#subcategory', true)">equipment & product</li>
-              <li onclick="displayContent(this)">electronics</li>
-              <li onclick="displayContent(this)">equipment & tools</li>
+              <li onclick="toggleSubMenu(event, this, '#panel1-1-1', false, '#electronics')">electronics</li>
+              <li onclick="toggleSubMenu(event, this, '#panel1-1-2', false, '#content1')">equipment & tools</li>
               <li onclick="displayContent(this)">inventory</li>
               <li onclick="displayContent(this)">machinery</li>
               <li onclick="displayContent(this)">material handling equipment</li>
@@ -37,6 +37,22 @@
               <li onclick="displayContent(this)">vehicles</li>
               <li onclick="displayContent(this)">other</li>
           </ul>
+          <!-- Equipement & Product // Electronics Menu -->
+          <ul id="panel1-1-1" class="categories">
+            <li onclick="toggleSubMenu(event, this, '#panel1-1', true)">electronics</li>
+            <li onclick="displayContent(this)">air compressor</li>
+            <li onclick="displayContent(this)">electric motor</li>
+        </ul>
+        <!-- Equipment & Tools Menu -->
+        <ul id="panel1-1-2" class="categories">
+          <li onclick="toggleSubMenu(event, this, '#panel1-1', true)">equipment & tools</li>
+          <li onclick="displayContent(this)">3D</li>
+          <li onclick="displayContent(this)">compressor, filters & grades</li>
+          <li onclick="displayContent(this)">cleaning</li>
+          <li onclick="displayContent(this)">conception</li>
+          <li onclick="displayContent(this)">coupe, cutting saw</li>
+          <li onclick="displayContent(this)">fabrication</li>
+      </ul>
       <!-- Expertise Menu -->
           <ul id="panel1-2" class="categories">
               <li onclick="toggleSubMenu(event, this, '#subcategory', true)">expertise</li>
@@ -67,12 +83,20 @@
   </div>
     <div id="content">
 
+      <!-- Equipment & Product content -->
       <div id="content-main" >
         <ul class="contents" id="content1">
-          <li>equipment & product</li>
-          <li>equipment & product</li>
-          <li>equipment & product</li>
-          <li>equipment & product</li>
+          <div id="aircompressor">
+            <li>Air-Vac DRS 16</li>
+          </div>
+          <div id="electronics">
+            <li>moteurs électriques à courant continu ( CC ou "DC" )</li>
+            <li>Direct current (DC) electric motors</li>
+            <li>Les moteurs électriques à courant alternatif (CA ou "AC") et à courant continu (DC)</li>
+            <li>Alternating current (AC) and direct current (DC) electric motors</li>
+            <li>Moteurs moyenne tension</li>
+            <li>Medium voltage motors</li>
+          </div>
         </ul>
 
         <ul class="contents" id="content2">

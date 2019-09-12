@@ -18,9 +18,8 @@ function toggleMenu(event) {
     }
   }, { once: true });
 
-  if ($('.categories').length() != null) {
-  //  $('#content').show();
-  console.log('category hidden');
+  if ($('#menu').is(':visible')) {
+   $('.contents').show();
   }
 }
 
