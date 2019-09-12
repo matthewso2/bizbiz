@@ -40,7 +40,7 @@
           <!-- Equipement & Product // Electronics Menu -->
           <ul id="panel1-1-1" class="categories">
             <li onclick="toggleSubMenu(event, this, '#panel1-1', true)">electronics</li>
-            <li onclick="displayContent(this)">air compressor</li>
+            <li onclick="toggleSubMenu(event, this, '#panel1-1-2', false, '#aircompressor')">air compressor</li>
             <li onclick="displayContent(this)">electric motor</li>
         </ul>
         <!-- Equipment & Tools Menu -->
@@ -86,16 +86,18 @@
       <!-- Equipment & Product content -->
       <div id="content-main" >
         <ul class="contents" id="content1">
-          <div id="aircompressor">
-            <li>Air-Vac DRS 16</li>
-          </div>
           <div id="electronics">
-            <li>moteurs électriques à courant continu ( CC ou "DC" )</li>
-            <li>Direct current (DC) electric motors</li>
-            <li>Les moteurs électriques à courant alternatif (CA ou "AC") et à courant continu (DC)</li>
-            <li>Alternating current (AC) and direct current (DC) electric motors</li>
-            <li>Moteurs moyenne tension</li>
-            <li>Medium voltage motors</li>
+            <div id="aircompressor">
+              <li>Air-Vac DRS 16</li>
+            </div>
+            <div id="electricmotor">
+              <li>moteurs électriques à courant continu ( CC ou "DC" )</li>
+              <li>Direct current (DC) electric motors</li>
+              <li>Les moteurs électriques à courant alternatif (CA ou "AC") et à courant continu (DC)</li>
+              <li>Alternating current (AC) and direct current (DC) electric motors</li>
+              <li>Moteurs moyenne tension</li>
+              <li>Medium voltage motors</li>
+            </div>
           </div>
         </ul>
 

@@ -26,6 +26,7 @@ function toggleMenu(event) {
 // SubMenu Selected Slide Function
 
 function toggleSubMenu(event, _this, show, reverse, _content) {
+  console.log(_content);
   event.stopPropagation()
   if (reverse == true) {
       $(_this).parent().hide("slide", { direction: "right" }, 500);
@@ -38,7 +39,12 @@ function toggleSubMenu(event, _this, show, reverse, _content) {
       $(show).show("slide", { direction: "right" }, 500);
 
       $(".contents").hide("slide", { direction: "right" }, 500);
-      $(_content).show("slide", { direction: "left" }, 500)
+      $(_content).show("slide", { direction: "left" }, 500);
+
+      // if (_content == "#electronics") {
+      //   $("#aircompressor").hide();
+      // }
+      
   }
 }
 
