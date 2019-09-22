@@ -40,11 +40,25 @@ function toggleSubMenu(event, _this, show, reverse, _content) {
 
       $(".contents").hide("slide", { direction: "right" }, 500);
       $(_content).show("slide", { direction: "left" }, 500);
-
-      // if (_content == "#electronics") {
-      //   $("#aircompressor").hide();
-      // }
       
   }
 }
 
+// Electronics Menu
+var text = "<ul>";
+text += "</ul>";
+
+var air = [
+  "Air-Vac DRS 16"
+]
+document.getElementById("aircompressor").innerHTML = air;
+
+var emotor = [
+  "moteurs électriques à courant continu ( CC ou 'DC')",
+  "Direct current (DC) electric motors",
+  "Les moteurs électriques à courant alternatif (CA ou 'AC') et à courant continu (DC)",
+  "Alternating current (AC) and direct current (DC) electric motors",
+  "Moteurs moyenne tension",
+  "Medium voltage motors"
+]
+document.getElementById("electricmotor").innerHTML = emotor;

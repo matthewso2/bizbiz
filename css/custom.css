@@ -92,7 +92,9 @@ body {
     z-index: 1000;
   }
   
-  /* Content Design */
+  /* --------- Content Design ------------ */
+
+  /* Content background */
   #content { 
     display: block;
     width: 100%;
@@ -101,19 +103,30 @@ body {
     position: absolute;
     top: 40%;
   }
-  #content-main ul {
+
+  /* Content design */
+  #content-main div {
       float: left;
       
   }
-  #content-main ul li,
-  #content-main ul ul li {
+  .contents {
+    float: left;
+    margin-right: 10%;
+    width: 20%;
+  }
+  .contents div div {
     padding: 10px;
     background: #537d7b;
     color: white;
+    display: block;
+    margin: 1em;
+    text-transform: uppercase;
     list-style-type: none;
-    width: 80%;
+    /* width: 20%; */
 
   }
+
+
   /* First Child Design */
   .categories:not(#subcategory) li:first-child {
     font-weight: bold;
