@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'>
     
@@ -25,8 +26,8 @@
               <li onclick="toggleSubMenu(event, this, '#panel1-4', false, '#content4')">real estate</i></li>
           </ul>
       <!-- Equipement & Product Menu -->
-          <ul id="panel1-1" class="categories">
-              <li onclick="toggleSubMenu(event, this, '#subcategory', true)">equipment & product</li>
+          <ul id="panel1-1" class="categories subcats">
+              <li onclick="toggleSubMenu(event, this, '#subcategory', true, '#content1')">equipment & product</li>
               <li onclick="toggleSubMenu(event, this, '#panel1-1-1', false, '#electronics')">electronics</li>
               <li onclick="toggleSubMenu(event, this, '#panel1-1-2', false, '#content1')">equipment & tools</li>
               <li onclick="displayContent(this)">inventory</li>
@@ -38,13 +39,13 @@
               <li onclick="displayContent(this)">other</li>
           </ul>
           <!-- Equipement & Product // Electronics Menu -->
-          <ul id="panel1-1-1" class="categories">
-            <li onclick="toggleSubMenu(event, this, '#panel1-1', true)">electronics</li>
+          <ul id="panel1-1-1" class="categories subcats">
+            <li onclick="toggleSubMenu(event, this, '#panel1-1', true, '#electronics')">electronics</li>
             <li onclick="toggleSubMenu(event, this, '#panel1-1-2', false, '#aircompressor')">air compressor</li>
-            <li onclick="displayContent(this)">electric motor</li>
+            <li onclick="toggleSubMenu(event, this, '#panel1-1-2', false, '#electricmotor')">electric motor</li>
         </ul>
         <!-- Equipment & Tools Menu -->
-        <ul id="panel1-1-2" class="categories">
+        <ul id="panel1-1-2" class="categories subcats">
           <li onclick="toggleSubMenu(event, this, '#panel1-1', true)">equipment & tools</li>
           <li onclick="displayContent(this)">3D</li>
           <li onclick="displayContent(this)">compressor, filters & grades</li>
@@ -54,7 +55,7 @@
           <li onclick="displayContent(this)">fabrication</li>
       </ul>
       <!-- Expertise Menu -->
-          <ul id="panel1-2" class="categories">
+          <ul id="panel1-2" class="categories subcats">
               <li onclick="toggleSubMenu(event, this, '#subcategory', true)">expertise</li>
               <li onclick="displayContent(this)">custom manufacturing</li>
               <li onclick="displayContent(this)">environmental services</li>
@@ -66,11 +67,11 @@
               <li onclick="displayContent(this)">other</li>
           </ul>
       <!-- Human Resources Menu -->
-          <ul id="panel1-3" class="categories">
+          <ul id="panel1-3" class="categories subcats">
               <li onclick="toggleSubMenu(event, this, '#subcategory', true)">human resources</li>
           </ul>
       <!-- Real Estate Menu -->
-          <ul id="panel1-4" class="categories">
+          <ul id="panel1-4" class="categories subcats">
               <li onclick="toggleSubMenu(event, this, '#subcategory', true)">real estate</li>
               <li onclick="displayContent(this)">facility</li>
               <li onclick="displayContent(this)">office & conference room</li>
@@ -87,20 +88,19 @@
       <div id="content-main" >
           <div class="contents" id="content1">
             <div id="electronics">
-              <div id="aircompressor"></div>
-              <div id="electricmotor"></div>
+                <div class="contdes" id="aircompressor"></div>
+                <div class="contdes" id="electricmotor"></div>
             </div>
           </div>
-        </div>
 
         <div class="contents" id="content2">
-            <div>expertise</div>
-            <div>expertise</div>
-            <div>expertise</div>
-            <div>expertise</div>
+            <div class="contdes"><div>expertise</div></div>
+            <div class="contdes"><div>expertise</div></div>
+            <div class="contdes"><div>expertise</div></div>
+            <div class="contdes"><div>expertise</div></div>
         </div>
 
-        <div class="contents" id="content3">
+        <!-- <div class="contents" id="content3">
             <div>human resources</div>
             <div>human resources</div>
             <div>human resources</div>
@@ -112,7 +112,7 @@
             <div>real estate</div>
             <div>real estate</div>
             <div>real estate</div>
-        </div>
+        </div> -->
       </div>
 
     </div>

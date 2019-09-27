@@ -1,4 +1,5 @@
 body {
+  background: #e8e9e9;
     margin: 0;
 }
 #header {
@@ -28,6 +29,7 @@ body {
 
 #menu {
     width: 100%;
+    transform: translate(49%);
   }
   
   #menu ul {
@@ -51,6 +53,13 @@ body {
     text-transform: uppercase;
     width: 100%;
   }
+
+  .subcats {
+    display: none;
+    /* translate: 100%; */
+  }
+
+
   /* FontAwesome Arrows Main */
 
   /* Button Arrows */
@@ -85,47 +94,30 @@ body {
   #menu ul li:hover {background-color: #ddd}
   
   /* Main Panel */
+  #menu,
   .categories {
-    display: inline-block;
+    z-index: 1000;
+  }
+
+  .categories {
+    /* display: inline-block; */
     width: 15em;
     position: absolute;
-    z-index: 1000;
   }
   
   /* --------- Content Design ------------ */
 
   /* Content background */
   #content { 
-    display: block;
-    width: 100%;
-    background-color: beige;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
     height: 800px;
     position: absolute;
-    top: 40%;
+    top: 20%;
+    z-index: -1;
   }
-
-  /* Content design */
-  #content-main div {
-      float: left;
-      
-  }
-  .contents {
-    float: left;
-    margin-right: 10%;
-    width: 20%;
-  }
-  .contents div div {
-    padding: 10px;
-    background: #537d7b;
-    color: white;
-    display: block;
-    margin: 1em;
-    text-transform: uppercase;
-    list-style-type: none;
-    /* width: 20%; */
-
-  }
-
 
   /* First Child Design */
   .categories:not(#subcategory) li:first-child {
@@ -139,3 +131,25 @@ body {
     display: table;
     clear: both;
 }
+
+  /* Content design */
+  .contdes div {
+    background-color: #F1592A;
+    border: solid 3px #172A52; 
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Varela Round', sans-serif;
+    margin: 5px;
+    padding: 20px;
+    text-transform: capitalize;
+    width: 30%;
+  }
+
+  /* Flexbox */
+
+  #content {
+    display: flex;
+    height: 90%;
+    overflow-y: auto;
+  }
